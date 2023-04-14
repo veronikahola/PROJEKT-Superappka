@@ -31,3 +31,250 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+
+
+
+
+/* menu */
+ul {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	list-style-type: none;
+}
+
+li {
+	float: left;
+}
+
+a.buttonMenu {
+	text-decoration: none;
+	color: #25133d;
+	padding: 20px;
+	display: block;
+}
+
+a.buttonMenu:hover {
+	background-color: #48418e;
+	color: white;
+}
+
+.superAppka {
+	font-weight: 700;
+	padding: 20px;
+	display: none;
+}
+
+
+
+/* hero */
+.hero {
+	background-image: url(images/pozadi.jpg);
+	color: white;
+	text-align: center;
+}
+
+h1 {
+	font-size: 50px;
+	margin: 0;
+	font-weight: 400;
+}
+
+.hero p {
+	font-size: 24px;
+	font-weight: 300;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.heroText {
+	padding: 20px;
+}
+
+a.buttonHero {
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	border-radius: 10px;
+	border: white 2px solid;
+	color: white;
+	margin-top: 10px;
+}
+
+a.buttonHero:hover {
+	background-color: #48418e;
+}
+
+.heroMobile {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero img {
+	width: 50vw;
+}
+
+
+
+/* main */
+.main {
+	padding: 20px;
+}
+
+.card {
+	text-align: center;
+	padding: 20px;
+}
+
+.card img {
+	width: 15vw;
+}
+
+h2 {
+	color: #48418e;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+
+
+/* footer */
+footer {
+	background-color: #48418e;
+	text-align: center;
+	color: white;
+	padding: 5px;
+}
+
+
+
+
+
+/* tablet 640 a víc */
+@media screen and (min-width: 640px) {
+
+
+
+	/* tablet menu */
+	.superAppka {
+		display: block;
+		padding: 20px 30px;
+	}
+
+	a.buttonMenu {
+		padding: 20px 30px;
+	}
+
+
+
+	/* tablet hero */
+	.hero {
+		display: flex;
+		background-size: 100%;
+	}
+
+	.heroText {
+		flex: 1 1 50%;
+		text-align: left;
+		padding: 50px 0px 50px 40px;
+	}
+
+	.buttons {
+		display: flex;
+		gap: 20px;
+	}
+
+	a.buttonHero {
+		text-align: center;
+		padding: 20px 30px;
+	}
+
+	h1 {
+		font-size: 70px;
+	}
+
+	.hero p {
+		font-size: 30px;
+	}
+
+	.heroMobile {
+		margin: 0;
+		flex-direction: column;
+	}
+
+	.hero img {
+		width: 100%;
+		height: auto;
+		margin: 0;
+	}
+
+
+
+	/* tablet main */
+	.main {
+		padding: 50px;
+	}
+	
+	.card img {
+		width: 10%;
+	}
+	
+	h2 {
+		font-size: 20px;
+	}
+}
+
+
+
+
+
+/* pc 11OOpx a víc */
+@media screen and (min-width: 1100px) {
+
+
+	/* pc menu */
+	.superAppka {
+		padding: 20px 30px 20px 50px;
+	}
+
+
+
+	/* pc hero */
+	.hero {
+		min-height: 450px;
+	}
+	
+	h1 {
+		font-size: 90px;
+	}
+
+	.hero p {
+		font-size: 36px;
+	}
+
+	a.buttonHero {
+		font-size: 20px;
+	}
+
+	.heroText {
+		padding-bottom: 60px;
+	}
+
+
+
+	/* pc main */
+	.main {
+		display: flex;
+		padding: 50px 25px;
+	}
+
+	.card {
+		padding: 0px 25px;
+	}
+
+	.card img {
+		width: 30%;
+	}
+}
